@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="My_Info_One_Cell" customModule="YXB_swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="头像" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jND-xY-MR1">
+                        <rect key="frame" x="8" y="16" width="70" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="tf5-lN-guk"/>
+                            <constraint firstAttribute="height" constant="37" id="x2a-EZ-qeJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="next" translatesAutoresizingMaskIntoConstraints="NO" id="9Be-YB-Kwe">
+                        <rect key="frame" x="307" y="30" width="5" height="10"/>
+                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="3s9-e0-8qF"/>
+                            <constraint firstAttribute="width" constant="5" id="nFs-5M-S5l"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVp-fA-vvS">
+                        <rect key="frame" x="245" y="7" width="54" height="54"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="54" id="5V4-7u-G9r"/>
+                            <constraint firstAttribute="height" constant="54" id="5aX-iG-JvR"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="onClickButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="d4m-ws-lZb"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="9Be-YB-Kwe" secondAttribute="trailing" constant="8" id="ViI-Ch-g12"/>
+                    <constraint firstItem="jND-xY-MR1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Wan-OE-wRV"/>
+                    <constraint firstItem="jND-xY-MR1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cdP-7y-LVd"/>
+                    <constraint firstItem="GVp-fA-vvS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="e9w-eS-E0L"/>
+                    <constraint firstItem="9Be-YB-Kwe" firstAttribute="leading" secondItem="GVp-fA-vvS" secondAttribute="trailing" constant="8" id="pEN-Ll-0IJ"/>
+                    <constraint firstItem="9Be-YB-Kwe" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="pcE-YI-b4w"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconButton" destination="GVp-fA-vvS" id="4DX-Qh-RiG"/>
+                <outlet property="iconButtonWidth" destination="5V4-7u-G9r" id="kVh-qR-pzC"/>
+                <outlet property="nextImageV" destination="9Be-YB-Kwe" id="s3u-rp-MPj"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="next" width="5" height="11"/>
+    </resources>
+</document>

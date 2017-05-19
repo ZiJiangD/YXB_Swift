@@ -1,0 +1,37 @@
+PODS:
+  - Alamofire (4.4.0)
+  - GTSDK (1.6.2.0)
+  - HandyJSON (1.6.1)
+  - IQKeyboardManagerSwift (4.0.9)
+  - LBXScan/LBXNative (2.0)
+  - LBXScan/UI (2.0)
+  - MBProgressHUD (1.0.0)
+  - MJRefresh (3.1.12)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4.0)
+  - GTSDK (~> 1.6.2.0)
+  - HandyJSON (~> 1.6.1)
+  - IQKeyboardManagerSwift (~> 4.0.9)
+  - LBXScan/LBXNative (~> 2.0)
+  - LBXScan/UI (~> 2.0)
+  - MBProgressHUD (~> 1.0.0)
+  - MJRefresh (~> 3.1.12)
+  - SDWebImage (~> 4.0.0)
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  GTSDK: 6089897a86579d4a7d66eb4245f2c8639c2e5e8f
+  HandyJSON: dcc98115467462a4749db81bc8a9052607600bdf
+  IQKeyboardManagerSwift: 2eefe6c429b86aa08bfbc1b5c891164d754adf91
+  LBXScan: 458f4b7a6688504a1415dc4a0f9822100e099f66
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+
+PODFILE CHECKSUM: d9424e1c2de9d0b8f8467b91445f771b804416af
+
+COCOAPODS: 1.2.1

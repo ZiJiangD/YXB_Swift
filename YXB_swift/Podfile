@@ -1,0 +1,16 @@
+platform :ios, "8.0"
+
+use_frameworks!
+
+target 'YXB_swift' do
+
+pod 'Alamofire', '~> 4.4.0'
+pod 'HandyJSON', '~> 1.6.1'
+pod 'GTSDK', '~> 1.6.2.0'
+pod 'IQKeyboardManagerSwift', '~> 4.0.9'
+pod 'MBProgressHUD', '~> 1.0.0'
+pod 'MJRefresh', '~> 3.1.12'
+pod 'SDWebImage', '~> 4.0.0'
+pod 'LBXScan/LBXNative','~> 2.0'
+pod 'LBXScan/UI','~> 2.0'
+end
